@@ -29,13 +29,56 @@
 
 
 ## 六、核心代码
+### Personnel
+public class Personnel {  
+	int number;  
+	String name;  
+	Personnel(int a,String b){  
+		number=a;  
+		name=b;  
+	}  
+}  
 
-
+### Student
+void chooseCourse(String a) {  
+		if(course1=="null") {  
+			course1=a;  
+		}  
+		else if(course2=="null") {  
+			course2=a;  	
+		}  
+		else if(course3=="null") {  
+			course3=a;  
+		}  
+		else if(course4=="null") {  
+			course4=a;  	
+		}  
+		else {  
+			System.out.println("选课数已达上限");  
+		}  
+		coursecount++;  
+	}  
+ 
+ ### Test
+ Scanner sacn1 = new Scanner(System.in);   
+		int stnumber = sacn1.nextInt(); //第三方库，键盘输入  
+		while (true) {  
+			System.out.println("输入选课名称：");  
+			Scanner sacn2 = new Scanner(System.in);  
+			String name1 = sacn2.nextLine(); //第三方库，键盘输入  
+			transtudent.chooseCourse(name1);    
+			System.out.println("是否继续选课：");  
+			Scanner sacn3 = new Scanner(System.in);   
+			int panduan1 = sacn3.nextInt(); //第三方库，键盘输入  
+			if(panduan1==0) {  
+				break;  
+			}  
 
 ## 七、运行结果
-
-
-
-
-
+### ![运行结果](https://github.com/bobo848/Java2/blob/main/实验三运行截图.JPG)
 ## 八、实验收获
+通过本次实验我懂得了系统的编译和使用  
+对于类的继承和重写 父类构造方法调用编写  
+深化了找错和改错的进行  
+对于构造方法有了更深的理解  
+
